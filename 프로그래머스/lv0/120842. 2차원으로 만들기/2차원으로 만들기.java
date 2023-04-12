@@ -11,14 +11,11 @@ class Solution {
         //03. num_list까지 돌기위해 k를 사용한다. 
         int k = 0;
         for(int i = 0; i < len;i++){
-            for(int j = 0 ; j < n ; j++)
-            {
+            for(int j = 0 ; j < n ; j++){
                 answer[i][j] = num_list[k];
                 k++;
             }
         }
-            
-            
         return answer;
     }
 }
