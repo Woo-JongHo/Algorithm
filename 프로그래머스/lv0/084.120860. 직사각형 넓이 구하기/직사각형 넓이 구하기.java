@@ -17,7 +17,7 @@ class Solution {
         TreeSet<Integer> sortX = new TreeSet<>(x);
         TreeSet<Integer> sortY = new TreeSet<>(y);
         
-        //3 차를 구한뒤 곱한다.
+        //03 차를 구한뒤 곱한다.
         int xlength = sortX.first() - sortX.last();
         int ylength = sortY.first() - sortY.last();
         return answer = xlength * ylength;
