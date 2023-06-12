@@ -36,7 +36,7 @@ class Solution {
         int b = 0;
         for ( int i = 0 ; i < arr.length; i++){
             b = (arr[i][0] * 2) + (arr[i][1] * 2) - 4;
-            if ( brown == b && arr[i][0] >= arr[i][1] && arr[i][1] > 2){
+            if ( brown == b && arr[i][0] >= arr[i][1]){
                 answer[0] = arr[i][0];
                 answer[1] = arr[i][1];
                 break;
