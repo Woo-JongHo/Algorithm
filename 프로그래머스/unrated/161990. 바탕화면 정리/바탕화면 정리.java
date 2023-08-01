@@ -1,6 +1,6 @@
 class Solution {
     public int[] solution(String[] wallpaper) {
-        int[] answer = {Integer.MAX_VALUE, Integer.MAX_VALUE, Integer.MIN_VALUE, Integer.MIN_VALUE};
+        int[] answer = {51,51,-1,-1};
         
         for(int i = 0 ; i < wallpaper.length; i++){
             char arr [] = wallpaper[i].toCharArray();
