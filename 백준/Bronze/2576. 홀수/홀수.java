@@ -1,14 +1,19 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        int a, b, c, d, e, f, g;
+        int a;
+        int b;
+        int c;
+        int d;
+        int e;
+        int f;
+        int g;
+        int compare = 100;
         int sum = 0;
-        int minOdd = 100; // 주어진 자연수의 최댓값으로 초기화
-
         a = sc.nextInt();
         b = sc.nextInt();
         c = sc.nextInt();
@@ -17,49 +22,48 @@ public class Main {
         f = sc.nextInt();
         g = sc.nextInt();
 
-        // 홀수를 찾아 합과 최솟값 계산
-        if (a % 2 != 0) {
-            sum += a;
-            if (minOdd > a)
-                minOdd = a;
+        if( a % 2 != 0){
+            sum = sum + a;
+            if(compare > a)
+                compare = a;
         }
-        if (b % 2 != 0) {
-            sum += b;
-            if (minOdd > b)
-                minOdd = b;
+        if( b % 2 != 0){
+            sum = sum + b;
+            if (compare > b)
+                compare = b;
         }
-        if (c % 2 != 0) {
-            sum += c;
-            if (minOdd > c)
-                minOdd = c;
+        if ( c % 2 != 0 ){
+            sum = sum + c;
+            if (compare > c)
+                compare = c;
         }
-        if (d % 2 != 0) {
-            sum += d;
-            if (minOdd > d)
-                minOdd = d;
+        if ( d % 2 != 0 ){
+            sum = sum + d;
+            if (compare > d)
+                compare = d;
         }
-        if (e % 2 != 0) {
-            sum += e;
-            if (minOdd > e)
-                minOdd = e;
+        if ( e % 2 != 0 ){
+            sum = sum + e;
+            if (compare > e)
+                compare = e;
         }
-        if (f % 2 != 0) {
-            sum += f;
-            if (minOdd > f)
-                minOdd = f;
+        if ( f % 2 != 0 ){
+            sum = sum + f;
+            if (compare > f)
+                compare = f;
         }
-        if (g % 2 != 0) {
-            sum += g;
-            if (minOdd > g)
-                minOdd = g;
+        if( g % 2 != 0 ){
+            sum = sum + g;
+            if ( compare > g)
+                compare = g;
         }
 
-        // 홀수가 존재하지 않을 경우 -1 출력, 그렇지 않으면 합과 최솟값 출력
-        if (sum == 0) {
+        if(sum == 0)
             System.out.println(-1);
-        } else {
+        else{    
             System.out.println(sum);
-            System.out.println(minOdd);
+            System.out.println(compare);
         }
+
     }
 }
