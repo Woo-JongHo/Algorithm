@@ -1,7 +1,6 @@
 class Solution {
     public String solution(int[] numbers, String hand) {
         StringBuilder sb = new StringBuilder();
-
         //처음 세팅
         int left = 10;
         int right = 12;
@@ -41,5 +40,6 @@ class Solution {
             }
         }
         return sb.toString();
+        
     }
 }
