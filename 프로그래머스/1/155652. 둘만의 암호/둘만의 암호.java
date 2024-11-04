@@ -16,6 +16,7 @@ class Solution {
                 else
                     count++;
             }
+            
             answer += c;
         }
         return answer;
