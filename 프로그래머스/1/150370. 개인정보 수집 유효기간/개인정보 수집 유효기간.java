@@ -8,6 +8,7 @@ class Solution {
         ArrayList<Integer> answerList = new ArrayList<Integer>();
         int i = 1; 
         
+        
         //오늘일자
         today = today.replace(".", "");
         
