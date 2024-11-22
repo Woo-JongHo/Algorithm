@@ -9,6 +9,8 @@ class Solution {
         int i = 1; 
         
         
+        
+        
         //오늘일자
         today = today.replace(".", "");
         
