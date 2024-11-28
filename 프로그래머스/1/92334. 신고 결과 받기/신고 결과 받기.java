@@ -6,6 +6,8 @@ class Solution {
     public int[] solution(String[] id_list, String[] report, int k) {
         int[] answer = new int[id_list.length];
         
+        
+        
         // 중복 신고는 안되니까 Key: 신고자, Value: 신고한 ID로 구분한다
         HashMap<String, List<String>> reportlist = new HashMap<>();
 
